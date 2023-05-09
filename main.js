@@ -11,3 +11,9 @@ export function stringLength(string) {
 export function reverseString(string) {
   return string.split('').reverse().join('');
 }
+
+export function capitalizeString(string) {
+  const stringAsArr = string.split('');
+  stringAsArr[0] = stringAsArr[0].toUpperCase();
+  return stringAsArr.join('');
+}
