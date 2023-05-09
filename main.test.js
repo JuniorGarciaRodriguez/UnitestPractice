@@ -1,4 +1,4 @@
-import { stringLength, reverseString } from './main';
+import { stringLength, reverseString, capitalizeString } from './main';
 
 describe('string function', () => {
   test('returns the length of the string when it is between 1 and 10 characters long', () => {
@@ -18,5 +18,13 @@ describe('string function', () => {
     expect(reverseString('hola')).toBe('aloh');
     expect(reverseString('')).toBe('');
     expect(reverseString('with space')).toBe('ecaps htiw');
+  });
+
+  test('capitalice first letter of the string', () => {
+    expect(capitalizeString('hello')).toBe('Hello');
+  });
+
+  test('capitalice only first letter of the sentence', () => {
+    expect(capitalizeString('hello world!')).toBe('Hello world!');
   });
 });
